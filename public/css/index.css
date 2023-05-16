@@ -1,0 +1,254 @@
+@font-face {
+  font-family: 'PressStart2P-Regular';
+  src: url('./PressStart2P-Regular.ttf');
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: black;
+  height: 100%;
+  user-select: none;
+  font-family: PressStart2P-Regular;
+}
+h1 {
+  font-family: PressStart2P-Regular;
+}
+p {
+  font-family: PressStart2P-Regular;
+}
+a {
+  font-family: PressStart2P-Regular;
+}
+.glow {
+  font-size: 45px;
+  color: white;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green;
+ }
+  to {
+      text-shadow: 0 0 20px #fff, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green, 0 0 80px green;
+ }
+}
+.button-container{
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes start{
+  0%{
+     height: 0rem;
+ }
+  100%{
+     height: 3rem;
+ }
+}
+.button {
+  -webkit-animation: start 0.1s ease forwards1;
+  -moz-animation: start 0.1s ease forwards;
+  animation: start 0.1s ease forwards;
+  display: inline-block;
+  width: auto;
+  height: 3rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: green;
+  color: white;
+  margin: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
+  cursor: pointer;
+  font-family: PressStart2P-Regular;
+  font-size: 1rem;
+  box-sizing: border-box;
+  user-select: none;
+  border-bottom: white solid 6px;
+  outline: black solid 0px;
+  transition: 0s ease all;
+}
+.button:hover{
+  background-color: white;
+  color: green;
+  border-bottom: green solid 6px;
+}
+.button:hover::before {
+  content:"> ";
+  position: absolute;
+  margin-left: -50px;
+  font-size: 1.3rem;
+  color: white;
+}
+.button:active{
+  background-color: white;
+  color: green;
+  border-bottom: green solid 0px;
+  text-decoration: underline;
+}
+/*about*/
+.back-to-home{
+  position: fixed;
+  top: 2rem;
+  left: 3rem;
+  font-size: 2.5rem;
+  color: white;
+  z-index: 500;
+  opacity: 0.3;
+}
+.back-to-home:hover{
+  color: white;
+  opacity: 1;
+}
+.role-container{
+  overflow: hidden;
+  width: 100%;
+}
+.roles-left{
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 80px;
+  width: auto;
+  text-align: left;
+  border-left: 3px solid white;
+}
+.roles-right{
+  display: inline-block;
+  padding-left: 80px;
+  padding-right: 10px;
+  width: auto;
+  text-align: right;
+  border-right: 3px solid white;
+}
+.dev{
+  -webkit-animation: rgb 10s ease-in-out infinite alternate;
+  -moz-animation: rgb 10s ease-in-out infinite alternate;
+  animation: rgb 10s ease-in-out infinite alternate;
+  text-shadow: 0 0 20px #fff;
+}
+@keyframes rgb{
+  0%{
+     color: rgb(255, 0, 0);
+ }
+  33%{
+     color: rgb(0, 255, 0);
+ }
+  66%{
+     color: rgb(0, 0, 255);
+ }
+  100%{
+     color: rgb(255, 0, 0);
+ }
+}
+.andonly:hover::before{
+  content: "AND ONLY ";
+}
+.card-container{
+  padding: 2rem;
+}
+.card{
+  background-color: rgba(0,0,0,0);
+  border-radius: 0;
+  width: 40rem;
+  align-items: center;
+  padding: 1rem;
+}
+.card-img-top{
+  /*width: auto;*/
+  min-height: auto;
+  background-color: rgba(0,0,0,1);
+}
+.card-body{
+  background-color: rgba(255,255,255,1);
+}
+.card-button {
+  -webkit-animation: start 0.1s ease forwards1;
+  -moz-animation: start 0.1s ease forwards;
+  animation: start 0.1s ease forwards;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-family: PressStart2P-Regular;
+  font-size: 1rem;
+  box-sizing: border-box;
+  user-select: none;
+  border-bottom: green solid 6px;
+  padding-bottom: 0.5rem;
+  transition: 0s ease all;
+}
+.card-button:hover{
+  color: green;
+  text-decoration: none;
+}
+.card-button:hover::before {
+  content:"> ";
+  position: absolute;
+  margin-left: -50px;
+  font-size: 1.3rem;
+  color: green;
+}
+.card-button:active{
+  color: green;
+}
+.hidden {
+  opacity:0;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+.footer{
+  height: 5rem;
+}
+
+.back-button {
+  -webkit-animation: start 0.1s ease forwards1;
+  -moz-animation: start 0.1s ease forwards;
+  animation: start 0.1s ease forwards;
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  color: black;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  font-family: PressStart2P-Regular;
+  font-size: 1rem;
+  box-sizing: border-box;
+  user-select: none;
+  border-bottom: green solid 6px;
+  transition: 0s ease all;
+}
+.back-button:hover{
+  background-color: green;
+  color: white;
+  text-decoration: none;
+}
+.back-button:hover::before {
+  content:"> ";
+  position: absolute;
+  margin-left: -50px;
+  font-size: 1.3rem;
+  color: green;
+}
+.back-button:active{
+  color: green;
+}
